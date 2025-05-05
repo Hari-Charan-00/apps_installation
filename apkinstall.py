@@ -6,9 +6,9 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BASE_URL = ""
-OPS_RAMP_SECRET = ''  # Add your OPS RAMP secret here
-OPS_RAMP_KEY = ''     # Add your OPS RAMP key here
-EXCEL_FILE_PATH = "C:\\Users\\hari.boddu\\Excels for Scripts\\install_apps.xlsx"
+OPS_RAMP_SECRET = ''
+OPS_RAMP_KEY = ''
+EXCEL_FILE_PATH = "install_apps.xlsx"
 
 def get_access_token(retries=3, delay=5):
     token_url = BASE_URL + "auth/oauth/token"
